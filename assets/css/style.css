@@ -15,7 +15,28 @@ header::before{
 .container{
     max-width: 71.25rem; 
     margin: auto; /* para centralizar os conteúdos */
-    background-color: aliceblue;
+}
+
+h1{
+    margin: 0;
+    font-size: 6rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    line-height: 6rem;
+    padding-bottom: 1.875rem; 
+}
+
+h2{
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+p{
+    line-height: 1.7rem;
 }
 
 .headerArea{
@@ -66,4 +87,72 @@ header::before{
     height: 1.5rem;
     width: 1.5rem;
     cursor: pointer;
+}
+
+.bannerImages img{
+    border-radius: 50%;
+    border: 0.35rem solid #117050;
+    height: 9.25rem;
+    margin-top: 3.75rem;
+    margin-right: 1.9rem;
+}
+
+.banner{
+    background-image: url("../images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 5.5rem 0;
+}
+
+.area1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.area1Img1{
+    background-image: url("../images/f1.jpg");
+    grid-row: 1 / 3;
+    grid-column: 2;
+    background-position: center;
+    background-size: cover;
+}
+
+.area1Img2{
+    background-image: url("../images/f2.jpg");
+    height: 21.87rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.content{
+    padding: 5rem;
+}
+
+.content q{
+    font-style: italic;
+}
+
+.button{
+    padding: 0.625rem 1.875rem;
+    border: 2px solid #454545;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #454545;
+    margin-top: 1rem;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: #454545;
+    color: white;
+}
+
+.content::before{
+    content: "";
+    width: 10.5rem;
+    height: 1.3rem;
+    background-color: #117050;
+    position: absolute;
+    margin-top: -1.5rem;
 }
