@@ -299,11 +299,11 @@ footer a{
     }
 
     .headerRight{
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .searchBar input{
-        max-width: 10rem;
+        max-width: 6rem;
     }
 
     h1{
