@@ -134,7 +134,7 @@ p{
 }
 
 .area1Img2{
-    height: 20rem;
+    height: 18rem;
     background-image: url("../images/f2.svg");
 }
 
@@ -201,15 +201,23 @@ p{
 }
 
 .area4{
-    background-image: url("../images/bg3.jpg");
-    padding: 6rem 12rem;    
-    background-position: right;
-    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 35rem 1fr;
     background-color: #e8e9ee;
+}
+
+.area4 .content{
+    padding: 10rem 0.625rem 10rem 15.625rem;
+}
+
+.area4Img{
+    background-image: url("../images/bg3.jpg");
 }
 
 .area4 h2, .area4 p{ 
     max-width: 20rem;
+    background-position: center;
+    background-size: cover;
 }
 
 footer{
@@ -233,4 +241,97 @@ footer::before{
 
 footer a{
     text-decoration: none;
+}
+
+
+
+@media (max-width: 1440px){
+    .area2 .content{
+        padding: 7rem 10rem;
+    }
+
+    .area3Left{
+        padding: 15rem 7.5rem 15rem 18rem;
+    }
+    
+}
+
+@media (max-width: 1024px){
+    .area2 .content{
+        padding: 5rem 8rem;
+    }
+
+    .area4 .content{
+        padding: 10rem 0.625rem 10rem 12rem;
+    }
+
+    .area3Left{
+        padding: 8rem 7.5rem 8rem 10rem;
+    }
+
+    .container{
+        padding: 0 1.3rem;
+    }
+}
+
+@media (max-width: 768px){
+    .area1, .area3{
+        grid-template-columns: 3fr 2fr;
+    }
+
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
+
+    .area2 .content{
+        padding: 3rem 6rem;
+    }
+
+    .area4 .content{
+        padding: 10rem 0.625rem 10rem 8rem;
+    }
+
+}
+
+@media (max-width: 425px){
+    .area1, .area2, .area3, .area4{
+        grid-template-columns: 1fr;
+    }
+
+    .headerRight{
+        gap: 1.5rem;
+    }
+
+    .searchBar input{
+        max-width: 10rem;
+    }
+
+    h1{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .bannerImages img{
+        border-radius: 50%;
+        border: 0.25rem solid #117050;
+        height: 4rem;
+        margin-top: 3.75rem;
+        margin-right: 0.8rem;
+    }
+
+    .content{
+        padding: 4rem;
+    }
+
+    .area2 .content{
+        padding: 2rem 3rem;
+    }
+
+    .area3Left{
+        padding: 3rem 3rem 3rem 3rem;
+    }
+
+    .area4 .content{
+        padding: 6rem 5rem 6rem 5rem;
+    }
 }
