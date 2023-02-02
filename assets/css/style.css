@@ -71,7 +71,7 @@ p{
     width: 4rem;
 }
 
-.searchBar form{
+.searchBar{
     display: flex;
 }
 
@@ -79,6 +79,7 @@ p{
     padding: 0.5rem 0.825rem;
     font-size: 1rem;
     border: 1px solid #999999;
+    border-right: 0;
     outline: 0;
     width: 100%;
     max-width: 13.75rem;
@@ -87,8 +88,9 @@ p{
 .searchBar button{
     border: 0;
     background-color: transparent;
-    margin-left: -1.8rem;
     cursor: pointer;
+    border: 1px solid #999999;
+    border-left: 0;
 }
 
 .searchBar button img{
@@ -214,15 +216,10 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
     gap: 2rem;
     height: 6.25rem;
     padding-top: 1rem;
     position: relative;
-
-    background-image: url("../images/bg.jpg");
-    background-position: cover;
-    background-size: center;
 }
 
 footer::before{
